@@ -5,9 +5,15 @@ class NavCategories extends Component {
 
     render() {
         return (
-            <Nav tabs>
+            <Nav tabs >
                 <NavItem>
                     <NavLink href="/">Home</NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink href="/login">Login</NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink href="/register">Registration</NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink href="/trips/">All Tasks</NavLink>
