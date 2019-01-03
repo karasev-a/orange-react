@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { Container, Col, Button, Form, FormGroup, Label, Input, FormText, FormFeedback } from 'reactstrap';
 
 
-export default class LoginPage extends Component {
+class LoginPage extends Component {
 
   state = {
     'email': '',
@@ -26,8 +26,10 @@ export default class LoginPage extends Component {
     });
   }
   submitForm(e) {
+    const {history} = this.props
     e.preventDefault();
     console.log(`Email: ${this.state.email}`)
+    history.push(`/tasks/`)
   }
   validateForm() {
     return this.state.validate.emailState === 'has-success' && this.state.password.length > 0;
@@ -102,3 +104,5 @@ export default class LoginPage extends Component {
   }
 
 };
+
+export default withRouter(LoginPage);

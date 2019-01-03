@@ -16,7 +16,7 @@ class NavCategories extends Component {
                     <NavLink href="/register">Registration</NavLink>
                 </NavItem>
                 {/* <NavItem>
-                    <NavLink href="/trips/">All Tasks</NavLink>
+                    <NavLink href="/tasks/">All Tasks</NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink href="/users/">All Users</NavLink>
