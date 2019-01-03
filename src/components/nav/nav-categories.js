@@ -6,21 +6,21 @@ class NavCategories extends Component {
     render() {
         return (
             <Nav tabs >
-                <NavItem>
+                {/* <NavItem>
                     <NavLink href="/">Home</NavLink>
-                </NavItem>
+                </NavItem> */}
                 <NavItem>
                     <NavLink href="/login">Login</NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink href="/register">Registration</NavLink>
                 </NavItem>
-                <NavItem>
+                {/* <NavItem>
                     <NavLink href="/trips/">All Tasks</NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink href="/users/">All Users</NavLink>
-                </NavItem>
+                </NavItem> */}
             </Nav>
         );
     }

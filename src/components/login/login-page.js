@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Col, Button, Form, FormGroup, Label, Input, FormText, FormFeedback } from 'reactstrap';
 
 
@@ -93,7 +94,9 @@ export default class LoginPage extends Component {
           >
             Submit
           </Button>
+          <Link to="/register" className="btn btn-link">Register</Link>
         </Form>
+        
       </Container>
     );
   }
